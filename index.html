@@ -1,0 +1,352 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- The Header Section -->
+    <section class="header">
+      <!-- The NavBar Section -->
+      <nav>
+        <div class="nav-container">
+          <div class="nav-logo">
+            <img src="data:image/jpeg;base64,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" alt="">
+          </div>
+          <div class="nav-items">
+            <ul>
+              <li>
+                <a href="index.html">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="products.html">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="aboutUs.html">
+                  About US
+                </a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+      <!-- Section talking about the company -->
+      <div class="main">
+        <div class="content">
+          <h1>
+              WELCOME TO ROYSTECH
+          </h1>
+          <div class="container">
+     
+              <p>
+                  We deal on
+                  <span class="typed-text"></span>
+                  <span class="cursor">&nbsp;</span>
+              </p>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    <h1 class="het">
+      Why People Prefer us
+    </h1>
+    <section class="ref" style="margin-top: 20px;">
+      <!-- The Why people Refer us Section -->
+      <div class="referUs">
+        
+        <div class="referContainer">
+          <div class="firstIcon">
+            <i class="far fa-hand-peace fa-3x"></i>
+            <p>
+              Intergrity
+            </p>
+          </div>
+          <div class="secondIcon">
+            <i class="far fa-building fa-3x"></i>
+            <p>
+              BUild
+            </p>
+          </div>
+          <div class="thirdIcon">
+            <i class="far fa-handshake fa-3x"></i>
+            <p>
+              Trust
+            </p>
+          </div>
+          <div class="fourthIcon">
+            <i class="far fa-gem fa-3x"></i>
+            <p>
+              Excellence
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview of product and services -->
+
+    <section class="product">
+      <div class="productContainer">
+        <div class="productHeader">
+          
+            OUR services
+          
+        </div>
+        <div class="productBody" data-aos="fade-up">
+          <div class="practice">
+            <div class="icon">
+              <i class="fas fa-code fa-2x"></i>
+            </div>
+            <div class="prac">
+              <h3>
+                Software Development
+              </h3>
+            </div>
+            <div class="body">
+              Flexible and bespoke software solutions tailored to meet your business requirements and emerging technology
+            </div>
+          </div>
+          <div class="practice">
+            <div class="icon">
+              <i class="fas fa-code fa-2x"></i>
+            </div>
+            <div class="prac">
+              <h3>
+                Web Development
+              </h3>
+            </div>
+            <div class="body">
+              We Provide Full Web design and development  Service, with Responsive and Mobile-ready features
+            </div>
+          </div>
+          <div class="practice">
+            <div class="icon">
+              <i class="fas fa-code fa-2x"></i>
+            </div>
+            <div class="prac">
+              <h3>
+                Consultancy
+              </h3>
+            </div>
+            <div class="body">
+              We advice you on every phase of a project, starting from analysis, development, deployment and its performance testing phase
+            </div>
+          </div>
+          <div class="practice">
+            <div class="icon">
+              <i class="fas fa-code fa-2x"></i>
+            </div>
+            <div class="prac">
+              <h3>
+                Prodigy School Management Solution
+              </h3>
+            </div>
+            <div class="body">
+              Automate student's records and analysis at one click. Find out why schools, their teachers, accountants love our software
+            </div>
+          </div>
+
+          <div class="practice">
+            <div class="icon">
+              <i class="fas fa-code fa-2x"></i>
+            </div>
+            <div class="prac">
+              <h3>
+                E-Library
+              </h3>
+            </div>
+            <div class="body">
+              Flexible and bespoke solution tailored to meet the need of students for research
+            </div>
+          </div>
+          <div class="practice">
+            <div class="icon">
+              <i class="fas fa-code fa-2x"></i>
+            </div>
+            <div class="prac">
+              <h3>
+                Document Management System
+              </h3>
+            </div>
+            <div class="body">
+              Access, Edit, Share, Control & Manage Files From Any Device
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Sliseshow -->
+   
+    <section class="testimonial">
+      <h1 class="het">
+        WHAT PEOPLE SAY ABOUT US
+      </h1>
+      <div class="testimonialSlide">
+        <div class="testimonialContainer fade">
+          <div class="testimonialIcon">
+            <i class="fas fa-quote-left fa-3x"></i>
+            
+            <i class="fas fa-quote-right fa-3x"></i>
+          </div>
+          <p>
+            Despite all odds, you guys made it happen, am very grateful. When i need help with technical support and i decided to try out Roystech. It was a decision not regrretted. The design and implementation was on point and on time. Minimalistic and very modern. Roystech is the Best
+          </p>
+          <p class="tittle">
+            -Iyitor Rachel Ray Accessories
+          </p>
+          
+        </div>
+
+
+        <div class="testimonialContainer fade">
+          <div class="testimonialIcon">
+            <i class="fas fa-quote-left fa-3x"></i>
+            
+            <i class="fas fa-quote-right fa-3x"></i>
+          </div>
+          <p>
+            Despite all odds, you guys made it happen, am very grateful Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellendus repudiandae soluta aliquid ad illum autem, cupiditate cumque perspiciatis ab libero magnam amet saepe asperiores, nobis vitae alias quia nostrum.
+          </p>
+          <p class="tittle">
+            -Barry Allen, Ceo Trainers
+          </p>
+          
+        </div>
+
+        <div class="testimonialContainer fade">
+          <div class="testimonialIcon">
+            <i class="fas fa-quote-left fa-3x"></i>
+            
+            <i class="fas fa-quote-right fa-3x"></i>
+          </div>
+          <p>
+            Despite all odds, you guys made it happen, am very grateful Lorem ad illum autem, cupiditate cumque perspiciatis ab libero magnam amet saepe asperiores, nobis vitae alias quia nostrum.
+          </p>
+          <p class="tittle">
+            -Explorar Just being Explorar
+          </p>
+          
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+
+    <div class="contactUS">
+        <h2>
+            Are your investments in IT equipment and software paying you back? Or just costing you more money?
+        </h2>
+        <p>
+            Check your business now! If your IT equipment is running below par or has frequent problems and downtime then you ARE losing money.
+        </p>
+        <div>
+          <a href="contact.html">
+              Request free IT Assessment
+          </a>
+        </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer>
+      <div class="footerMain">
+        <div class="container1">
+          <h1>
+            CONTACT US
+          </h1>
+            <div class="footerContainer" >
+                <div class="footerIcons">
+                    <a href="https://twitter.com/AdejiFred">
+                        <i class="fab fa-twitter fa-3x"></i>
+                    </a>
+                </div>
+                <div class="footerIcons">
+                    <a href="tel:09012929131">
+                        <i class="fas fa-phone fa-2x"></i>
+                    </a>
+                    
+                </div>
+                <div class="footerIcons">
+                    <a href="mailto:fredadejiemma99@gmail.com">
+                        <i class="far fa-envelope fa-3x"></i>
+                    </a>
+                </div>
+                <div class="footerIcons">
+                    <a href="https://github.com/Explorarthecreator">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+          <h1>
+            ADDRESS
+          </h1>
+          <p>
+            <span>
+              Head Office:
+            </span>
+            32 Irepodun Street, Opp. First Bank, Iyana Ipaja, Lagos, Nigeria
+          </p>
+          <p>
+            <span>
+              USA Office:
+            </span>
+            9100 Scott Adam Ct. Laurel, Maryland 20708
+          </p>
+        </div>
+      </div>
+      
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/e9ee9bdbd4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration:1000,
+                delay:200,
+                once:false,
+                mirror:true
+            }
+        );
+      </script>  
+</body>
+</html>

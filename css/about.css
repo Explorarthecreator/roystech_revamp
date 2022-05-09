@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+
+}
+
+@media screen and (min-width:600px) {
+    nav{
+        border-bottom: 1px solid #1ba1e2;
+    }
+    .nav-container{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    
+        
+    }
+    .nav-logo img{
+        width: 100px;
+        height: 50px;
+    }
+    .nav-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-items ul{
+        display: flex;
+    }
+    .nav-items ul li{
+        list-style-type: none;
+        align-self: center;
+        display: inline-block;
+        margin-left: 60px;
+        position: relative;
+    }
+    .nav-items ul li a{
+      text-decoration: none;
+      font-size: 20px;
+      color: #1ba1e2;
+    }
+    .nav-items ul li::after{
+          content: '';
+          height: 3px;
+          width: 0;
+          background: #009688;
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          transition: 0.5s;
+      }
+      .nav-items ul li:hover::after{
+          width: 100%;
+          
+      }
+    .aboutUsHeader{
+        width: 80%;
+        margin: auto;
+        height: 70vh;
+        display: flex;
+        padding: 30px;
+        justify-content: space-between;
+    }
+    .header1{
+        width: 50%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .header1 p{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .header2{
+        width: 40%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .header2 p{
+        
+        font-family: 'Bungee Shade', cursive;
+        font-size: 100px;
+        color: #1ba1e2;
+    }
+    .content{
+        width: 100%;
+        height: 80%;
+    }
+
+    .valuesContainer{
+        width: 80%;
+        margin: auto;
+    }
+    .valuesContainer h1{
+        text-align: center;
+        color: #1ba1e2;
+        font-family: 'Monoton', cursive;
+        font-weight: lighter;
+        font-size: 2rem;
+    }
+    .valuesContainer p{
+        width: 50%;
+    }
+    .teamContainer{
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .teamContainer h1{
+        text-align: right;
+        font-size: 3rem;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #1ba1e2;
+        font-family: 'Monoton', cursive;
+        font-weight: lighter;
+    }
+    .teamContainer span{
+        color: #1ba1e2;
+        font-weight: bolder;
+    }
+    .contain{
+        width: 100%;
+        display: flex;
+        height: 60vh;
+        justify-content: space-between;
+    }
+    .teamBody{
+        width: 22%;
+        box-shadow: 3px 5px 6px #1ba0e2b2;
+        border-radius: 20px;
+        background-color: whitesmoke;
+    }
+    .teamImage{
+        width: 100%;
+        height: 70%;
+    }
+    .teamPosition{
+        height: 10%;
+        width: 100%;
+        color: #222;
+        padding: 10px;
+    }
+    .teamPosition h4{
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    .teamPosition p{
+        font-size: medium;
+    }
+    .teamSocial{
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    .teamBody img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .social a {
+        color: #1ba1e2;
+        text-decoration: none;
+        width: 20%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          justify-content: center;
+          align-items: center;
+          display: flex;  
+          text-decoration: none;
+          font-size: large;
+    }
+    .social a:hover {
+        color: #1ba0e29b;
+    }
+    
+    .contactUS{
+          width: 80%;
+          margin: auto;
+          text-align: center;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          background: linear-gradient(#1ba1e2,#030955) ;
+          color: white;
+          margin-top: 100px;
+    }
+    .contactUS h2{
+          font-size: 2rem;
+          width: 80%;
+          margin: auto;
+    }
+    .contactUS p{
+          font-size: larger;
+          margin-top: 10px;
+          color: rgb(184, 181, 181);
+    }
+    .contactUS span{
+          color: #1ba1e2;
+    }
+    .contactUS div{
+          width: 250px;
+          height: 50px;
+          margin: auto;
+          
+          
+          border-radius: 20px;
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    }
+    .contactUS div a:hover{
+          background-color: white;
+          color: #1ba1e2;
+    }
+    .contactUS div a{
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          justify-content: center;
+          align-items: center;
+          display: flex;  
+          text-decoration: none;
+          font-size: large;
+          background-color: #1ba1e2;
+          color: white;
+    }
+    
+    footer{
+        background-color: #222;
+        margin-top: 100px;
+        border-radius:  10% 10% 0 0;
+    }
+    .footerIcons{
+      width: 100px;
+      height: 100px;
+      justify-self: center;
+      align-self: center;
+      color: #dd7732;
+      text-align: center;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .footerContainer{
+      width: 80%;
+      height: 100px;
+      margin: auto;
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-around;
+    }
+    .footerIcons a {
+      color: white;
+      text-decoration: none;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .footerIcons a:hover {
+      background-color: white;
+      color: #1ba1e2;
+      border-radius: 50%;
+    }
+    footer h1{
+      font-size: 1.5rem;
+      color: #1ba1e2;
+      text-align: center;
+    }
+    .container2 p{
+      padding: 20px;
+      font-size: large;
+      color: #bbb;
+      width: 100%;
+      margin: auto;
+    }
+    footer span{
+      color: #1ba1e2;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    .footerMain{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      padding-top: 40px;
+    }
+    .container1{
+      width: 50%;
+    }
+    .container2{
+      width: 50%;
+    }
+}
+@media screen and (max-width:599px) {
+
+
+
+    .nav-container{
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        padding: 10px;
+  
+        
+    }
+    .nav-logo{
+        width: 15%;
+        margin-bottom: 15px;
+    }
+    .nav-logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .nav-items{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-items ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        list-style-type: none;        
+    }
+    .nav-items ul li{
+        list-style-type: none;
+        align-self: center;
+        
+    }
+    .nav-items ul li a{
+      text-decoration: none;
+      font-size: 20px;
+      color: #1ba1e2;
+    }
+    .aboutUsHeader{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .header1{
+        width: 90%;
+        margin: auto;
+    }
+    .header1 p{
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    .header2{
+        width: 90%;
+        margin: auto;
+    }
+    .header2 p{
+        font-family: 'Bungee Shade', cursive;
+        font-size: 50px;
+        color: #1ba1e2;
+        display: inline;
+       
+    }
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+
+    .teamContainer{
+        width: 90%;
+        height: 150vh;
+        margin: auto;
+        margin-bottom: 30px;
+ 
+    }
+    .teamContainer h1{
+        text-align: right;
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #1ba1e2;
+        font-family: 'Monoton', cursive;
+        font-weight: lighter;
+    }
+    .teamContainer span{
+        color: #1ba1e2;
+        font-weight: bolder;
+    }
+    .contain{
+        width: 100%;
+        display: grid;
+        height: 90%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: minmax(300px,auto);
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    .teamBody{
+        box-shadow: 3px 5px 6px #1ba0e2b2;
+        border-radius: 20px;
+        background-color: whitesmoke;
+    }
+    .teamImage{
+        width: 100%;
+        height: 70%;
+    }
+    .teamPosition{
+        height: 10%;
+        width: 100%;
+        color: #222;
+    }
+    .teamPosition h4{
+        font-size: 1rem;
+        
+    }
+    .teamPosition p{
+        font-size: small;
+    }
+    .teamSocial{
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5px;
+    }
+    .teamBody img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .social a {
+        color: #1ba1e2;
+        text-decoration: none;
+        width: 20%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          justify-content: center;
+          align-items: center;
+          display: flex;  
+          text-decoration: none;
+          font-size: large;
+    }
+    .social a:hover {
+        color: #1ba0e29b;
+    }
+    .contactUS{
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: linear-gradient(#1ba1e2,#030955) ;
+        color: white;
+        margin-top: 100px;
+    }
+    .contactUS h2{
+        font-size: 1.2rem;
+        width: 80%;
+        margin: auto;
+    }
+    .contactUS p{
+        font-size: small;
+        margin-top: 10px;
+        color: rgb(184, 181, 181);
+    }
+    .contactUS span{
+        color: #1ba1e2;
+    }
+    .contactUS div{
+        width: 250px;
+        height: 50px;
+        margin: auto;
+        border-radius: 20px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactUS div a{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;  
+        text-decoration: none;
+        font-size: large;
+        background-color: #1ba1e2;
+        color: white;
+    }
+
+
+
+
+
+
+    footer{
+        background-color: #222;
+        margin-top: 100px;
+        border-radius:  10% 10% 0 0;
+    }
+    .footerIcons{
+      width: 80px;
+      height: 80px;
+      justify-self: center;
+      align-self: center;
+      color: #dd7732;
+      text-align: center;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .footerContainer{
+      width: 100%;
+      height: 100px;
+      margin: auto;
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-around;
+  }
+  .footerIcons a {
+      color: white;
+      text-decoration: none;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .footerIcons a:hover {
+      background-color: white;
+      color: #1ba1e2;
+      border-radius: 50%;
+  }
+  footer h1{
+      font-size: 1.5rem;
+      color: #1ba1e2;
+      text-align: center;
+  }
+  .container2 p{
+      padding: 20px;
+      font-size: large;
+      color: #bbb;
+      width: 100%;
+      margin: auto;
+  }
+  footer span{
+      color: #1ba1e2;
+      margin-right: 10px;
+      font-weight: bold;
+  }
+  .footerMain{
+      width: 100%;
+      margin: auto;
+      padding-top: 40px;
+  }
+  .container1{
+      width: 100%;
+  }
+  .container2{
+      width: 100%;
+  }
+}

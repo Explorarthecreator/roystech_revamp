@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    /* border: 1px solid; */
+    
+}
+body{
+    background-color: white;
+}
+@media screen and (min-width:897px){
+    
+    nav{
+        border-bottom: 1px solid #1ba1e2;
+    }
+    .nav-container{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+
+        
+    }
+    .nav-logo img{
+        width: 100px;
+        height: 50px;
+    }
+    .nav-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-items ul{
+        display: flex;
+    }
+    .nav-items ul li{
+        list-style-type: none;
+        align-self: center;
+        display: inline-block;
+        margin-left: 60px;
+        position: relative;
+    }
+    .nav-items ul li a{
+        text-decoration: none;
+        font-size: 25px;
+        color: #1ba1e2;
+    }
+    .nav-items ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    .nav-items ul li:hover::after{
+        width: 100%;
+        
+    }
+    .contactContainer{
+        width: 90%;
+        margin: auto;
+        height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        margin-top: 40px;
+        
+    }
+    .contactP{
+        width: 50%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+    .contactP h1{
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    .contactP h1 span{
+        color: #1ba1e2;
+        font-size: 3rem;
+    }
+    .contactP p{
+        font-size: 1.1rem;
+        font-family: fantasy;
+        width: 80%;
+    }
+    .contactForm{
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+    form{
+        background:linear-gradient(rgba(255, 255, 255, 0.424),rgba(245, 245, 245, 0.335)), url("../media/flying\ message.png");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        box-shadow:3px 5px 6px #1ba1e2;
+        position: absolute;
+        left: -30;
+        top: -40;
+        border-radius: 30px;
+    }
+    input{
+        background-color: transparent;
+        height: 50px;
+        width: 90%;
+        border: none;
+        border-bottom: 2px solid #1ba1e2;
+        outline: none;
+        font-size: large;
+        margin-bottom: 20px;
+    }
+    fieldset{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        background-color: transparent;
+        margin-top: 50px;
+        border: none;
+    }
+    textarea{
+        font-size: large;
+        width: 90%;
+        background-color: transparent;
+        border: 2px solid #1ba1e2;
+    }
+    button{
+        width: 150px;
+        height: 50px;
+        background-color: #1ba1e2;
+        border-radius: 20px;
+        color: white;
+        font-size: large;
+        border: none;
+        outline: none;
+        margin-top: 20px;
+    }
+    button:hover{
+        background-color: white;
+        color: #1ba1e2;
+        border: 1px solid #1ba1e2;
+    }
+    footer{
+        background-color: #222;
+        /* margin-top: 100px; */
+        border-radius:  10% 10% 0 0;
+    }
+    .footerIcons{
+        width: 100px;
+        height: 100px;
+        justify-self: center;
+        align-self: center;
+        color: #dd7732;
+        text-align: center;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerContainer{
+        width: 80%;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-around;
+    }
+    .footerIcons a {
+        color: white;
+        text-decoration: none;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerIcons a:hover {
+        background-color: white;
+        color: #1ba1e2;
+        border-radius: 50%;
+    }
+    footer h1{
+        font-size: 1.5rem;
+        color: #1ba1e2;
+        text-align: center;
+    }
+    .container2 p{
+        padding: 20px;
+        font-size: large;
+        color: #bbb;
+        width: 100%;
+        margin: auto;
+    }
+    footer span{
+        color: #1ba1e2;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    .footerMain{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        padding-top: 40px;
+    }
+    .container1{
+        width: 50%;
+    }
+    .container2{
+        width: 50%;
+    }
+}
+@media screen and (max-width:897px){
+
+    .nav-container{
+        width: 90%;
+        margin: auto;
+        /* display: flex; */
+        justify-content: space-between;
+        padding: 10px;
+  
+        
+    }
+    .nav-logo{
+        width: 15%;
+        margin-bottom: 15px;
+    }
+    .nav-logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .nav-items{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-items ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        list-style-type: none;        
+    }
+    .nav-items ul li{
+        list-style-type: none;
+        align-self: center;
+        
+    }
+    .nav-items ul li a{
+      text-decoration: none;
+      font-size: 20px;
+      /* font-weight: bold; */
+      color: #1ba1e2;
+      }
+    .contactContainer{
+        width:100%;
+        margin: auto;
+       
+        
+        margin-top: 40px;
+        
+    }
+    .contactP{
+        width: 90%;
+        margin-bottom: 20px;
+        text-align: center;
+        margin: auto;
+        
+    }
+    .contactForm{
+        width: 100%;
+        
+        position: relative;
+    }
+    form{
+        background:linear-gradient(rgba(255, 255, 255, 0.424),rgba(245, 245, 245, 0.335)), url("../media/flying\ message.png");
+        background-size: cover;
+        background-position: center;
+        
+        /* position: absolute; */
+        width: 100%;
+    }
+    input{
+        background-color: transparent;
+        height: 50px;
+        width: 90%;
+        border: none;
+        border-bottom: 2px solid #1ba1e2;
+        outline: none;
+        font-size: large;
+        margin-bottom: 20px;
+    }
+    fieldset{
+        width: 100%;
+        
+        /* text-align: center; */
+        background-color: transparent;
+        margin-top: 50px;
+        border: none;
+    }
+    textarea{
+        font-size: large;
+        width: 90%;
+        background-color: transparent;
+        border: 2px solid #1ba1e2;
+       
+    }
+    form div{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    button{
+        width: 150px;
+        height: 50px;
+        background-color: #1ba1e2;
+        border-radius: 20px;
+        color: white;
+        font-size: large;
+        border: none;
+        outline: none;
+    }
+    button:hover{
+        background-color: white;
+        color: #1ba1e2;
+        border: 1px solid #1ba1e2;
+    }
+    .contactP img{
+        width: 100%;
+        height: 60%;
+    }
+    .contactP h1{
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .contactP h1 span{
+        color: #1ba1e2;
+    }
+    .contactP p{
+        font-size: 1.4rem;
+        font-family: fantasy;
+        width: 80%;
+        margin: auto;
+    }
+
+    footer{
+        background-color: #222;
+        margin-top: 100px;
+        border-radius:  10% 10% 0 0;
+    }
+    .footerIcons{
+      width: 80px;
+      height: 80px;
+      justify-self: center;
+      align-self: center;
+      color: #dd7732;
+      text-align: center;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .footerContainer{
+      width: 100%;
+      height: 100px;
+      margin: auto;
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-around;
+  }
+  .footerIcons a {
+      color: white;
+      text-decoration: none;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .footerIcons a:hover {
+      background-color: white;
+      color: #1ba1e2;
+      border-radius: 50%;
+  }
+  footer h1{
+      font-size: 1.5rem;
+      color: #1ba1e2;
+      text-align: center;
+  }
+  .container2 p{
+      padding: 20px;
+      font-size: large;
+      color: #bbb;
+      width: 100%;
+      margin: auto;
+  }
+  footer span{
+      color: #1ba1e2;
+      margin-right: 10px;
+      font-weight: bold;
+  }
+  .footerMain{
+      width: 100%;
+      margin: auto;
+      padding-top: 40px;
+  }
+  .container1{
+      width: 100%;
+  }
+  .container2{
+      width: 100%;
+  }
+}
